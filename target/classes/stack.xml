@@ -1,0 +1,29 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="urn:org:jgroups"
+        xsi:schemaLocation="urn:org:jgroups http://www.jgroups.org/schema/jgroups.xsd">
+    <!-- PROTOCOLO TRANSPORTE UDP -->
+    <UDP/>
+    <!-- ENCONTRAR NOVOS -->
+    <PING/>
+    <!-- ENCONTRAR FALHA THREAD PING SOCKET -->
+    <FD_SOCK/>
+    <!-- MULTICAST HEARTBEAT, SUSPEITA SE NAO RESPONDER -->
+    <FD_ALL/>
+    <!-- VERIFICA SE SUSPEITO MORREU -->
+    <VERIFY_SUSPECT/>
+    <!-- LOCK ENTRE TODOS -->
+    <PEER_LOCK/>
+    <!-- UDP CONFIAVEL -->
+    <pbcast.NAKACK2/>
+    <!-- DS -->
+    <!--<tom.TOA/>-->
+    <!-- PROTOCOLO UNICAST CONFIAVEL -->
+    <!--<UNICAST3/>-->
+    <!-- REMOVER MENSAGEMS QUE JA FORAM VISTAS -->
+    <pbcast.STABLE/>
+    <!-- GERENCIADOR DE GRUPOS -->
+    <pbcast.GMS/>
+    <!-- ORDENAÇÃO TOTAL LAMPORT -->
+    <SEQUENCER />
+
+</config>
